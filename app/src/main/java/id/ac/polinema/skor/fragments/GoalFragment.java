@@ -47,6 +47,7 @@ public class GoalFragment extends Fragment {
 		bundle.putParcelable(ScoreFragment.SCORER_KEY, goalScorer);
 		getParentFragmentManager().setFragmentResult(requestKey, bundle);
 		Navigation.findNavController(view).navigateUp();
+		
 	}
 
 	public void onCancelClicked(View view) {
